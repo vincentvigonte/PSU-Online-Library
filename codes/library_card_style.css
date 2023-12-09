@@ -1,0 +1,220 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-image: url("folder/bg.png");
+  background-size: cover;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 250px;
+  perspective: 1000px;
+  color: white;
+}
+
+.heading_8264 {
+  position: center;
+  letter-spacing: .2em;
+  font-size: 1em;
+  top: 0.5em;
+  left: 18.6em;
+  color:black;
+}
+.name {
+  position: absolute;
+  font-weight: bold;
+  font-size: 0.7em;
+  top: 7em;
+  left: 15em;
+  color: black;
+  font-style: bold;
+}
+.university {
+  position: absolute;
+  font-weight: bold;
+  font-size: 0.8em;
+  top: 7em;
+  left: 13em;
+  color: black;
+  font-style: italic;
+}
+.college {
+  position: absolute;
+  font-weight: bold;
+  font-size: 0.8em;
+  top: 8em;
+  left: 13em;
+  color: black;
+  font-style: italic;
+}
+.course {
+    position: absolute;
+    font-weight: bold;
+    font-size: 0.8em;
+    top: 9.2em;
+    left: 13em;
+    color: black;
+    font-style: italic;
+}
+.number {
+  position: absolute;
+  font-weight: bold;
+  font-size: .8em;
+  top: 10.2em;
+  left: 13em;
+  color: black;
+  font-style: italic;
+}
+.date_valid {
+  position: absolute;
+  font-weight: bold;
+  font-size: .8em;
+  top: 11.2em;
+  left: 13em;
+  color: black;
+  font-style: italic;
+}
+.logo {
+    position: absolute;
+    top: 6.8em;
+    left: 11.7em;
+}
+
+  
+  .strip {
+    position: absolute;
+    background-color: black;
+    width: 25em;
+    height: 2em;
+    top: 2.4em;
+    background: repeating-linear-gradient(
+      45deg,
+      #303030,
+      #303030 10px,
+      #202020 10px,
+      #202020 20px
+    );
+  }
+  
+  .mstrip {
+    position: absolute;
+    width: 13em;
+    height: 2em;
+    top: 5em;
+    left: .1em;
+    border-radius: 2.5px;
+    
+  }
+
+  .sstrip {
+    position: absolute;
+    width: 13em;
+    height: 9.5em;
+    top: .0em;
+    left: 11em;
+    border-radius: 2.5px;
+    
+  }
+  .Birthday {
+    position: absolute;
+    font-weight: bold;
+    font-size: .7em;
+    top: .8em;
+    left: -1em;
+    color: black;
+    font-style: italic;
+    text-align: left;
+  }
+  .Sex {
+    position: absolute;
+    font-weight: bold;
+    font-size: .7em;
+    top: 1.8em;
+    left: -1em;
+    color: black;
+    font-style: italic;
+    text-align: left;
+  }
+  .Address {
+    position: absolute;
+    font-weight: bold;
+    font-size: .7em;
+    top: 2.8em;
+    left: -1em;
+    color: black;
+    font-style: italic;
+    text-align: left;
+  }
+
+  .Note {
+    position: absolute;
+    font-weight: bold;
+    font-size: .7em;
+    top: 4.8em;
+    left: -1em;
+    color: black;
+    font-style: italic;
+    text-align: left;
+  }
+
+  .Phone {
+    position: absolute;
+    font-weight: bold;
+    font-size: .7em;
+    top: 6.8em;
+    left: -1em;
+    color: black;
+    font-style: italic;
+    text-align: left;
+  }
+  .Uweb {
+    position: absolute;
+    font-weight: bold;
+    font-size: .7em;
+    top: 7.8em;
+    left: -1em;
+    color: black;
+    font-style: italic;
+    text-align: left;
+  }
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+  }
+
+  .flip-card-front {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -1px 0px inset;
+    background: linear-gradient(45deg, #FFA500, #FF6347); /* Gradient Orange */
+}
+
+.flip-card-back {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -1px 0px inset;
+    background: linear-gradient(45deg, #FFA500, #FF6347); /* Gradient Orange */
+    transform: rotateY(180deg);
+}
